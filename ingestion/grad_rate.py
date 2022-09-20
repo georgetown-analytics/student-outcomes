@@ -10,8 +10,7 @@ urls = ("https://www2.ed.gov/about/inits/ed/edfacts/data-files/acgr-sch-sy2010-1
                 "https://www2.ed.gov/about/inits/ed/edfacts/data-files/acgr-sch-sy2015-16.csv",  \
                 "https://www2.ed.gov/about/inits/ed/edfacts/data-files/acgr-sch-sy2016-17.csv",  \
                 "https://www2.ed.gov/about/inits/ed/edfacts/data-files/acgr-sch-sy2017-18.csv",  \
-                "https://www2.ed.gov/about/inits/ed/edfacts/data-files/acgr-sch-sy2018-19-long.csv")
-
+                "https://www2.ed.gov/about/inits/ed/edfacts/data-files/acgr-sch-sy2018-19-wide.csv")
 def make_raw_gr_frame(year):
     """ Create raw graduation rate dataframe for a given year directly from the .csv url. It is 'raw' because 
     no modifications like renaming or deleting are done. """ 
