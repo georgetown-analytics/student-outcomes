@@ -1,6 +1,7 @@
 import pandas as pd
 import seaborn as sns
 from argparse import ArgumentError
+import numpy as np
 
 urls = ("https://www2.ed.gov/about/inits/ed/edfacts/data-files/acgr-sch-sy2010-11.csv", \
         "https://www2.ed.gov/about/inits/ed/edfacts/data-files/acgr-sch-sy2011-12.csv", \
@@ -41,8 +42,44 @@ def make_gr_frame(year):
     # Rename columns so the names are shorter
     new_col_names = list(map(_column_renamer,[year]*len(df.columns),df.columns))
     df.columns = new_col_names
-    # @TODO Converting string data to numbers
-    # Small number of schools are missing an ALL rate
-    # Suppressed RATE data for 1-5 students are reported as 'PS'
-    # Some rates have a prefix of GT, GE, LT, or LE
-    return df 
+    return clean_all_rate(df)
+
+def conv_range_to_float(t: str):
+    """ Take in a numeric range given as a string, e.g. "10-20" and return the midpoint as a float. """
+    vals = t.split('-')
+    if len(vals) == 2:
+        val1,val2 = np.float64(vals)
+        return round(val1/2.0 + val2/2.0, 0)
+    else:
+        return t
+
+def clean_all_rate(df : pd.DataFrame):
+    """ Drop rows with missing values for the ALL or ALL_RATE columns. Convert strings to numbers. 
+    Small number of schools are missing an ALL_RATE. Suppressed RATE data for 1-5 students are reported as 'PS'
+    Some rates have a prefix of GT, GE, LT, or LE.
+    """
+    # Drop schools with no value given for the number of total kids.
+    df.loc[:,:] = df[df.ALL != "."]
+    # Drop small schools that have less than 5 total students in their cohort because no rate is given for them.
+    df.loc[:,:] = df[df.ALL_RATE != "PS"]
+    df.dropna(subset=['NCESSCH', 'ALL','ALL_RATE'],inplace=True)
+    # Prefixes are given for the graduation rates that mean "greater than", "less than", etc. to make it hard to identify
+    # individual children when the cohorts are small. 
+    # Strip off prefixes and use the range endpoint as an approximation for the grad rate.
+    prefixes = ['GT','LT','GE','LE']
+    colname = 'ALL_RATE'
+    df.loc[:, colname] = df[colname].str.removeprefix('GE')
+    df.loc[:, colname] = df[colname].str.removeprefix('LE')
+    df.loc[:, colname] = df[colname].str.removeprefix('GT')
+    df.loc[:, colname] = df[colname].str.removeprefix('LT')
+
+    df.loc[:,'ALL_RATE2'] = df.ALL_RATE.transform(conv_range_to_float)
+
+    df.loc[:,'ALL'] = pd.to_numeric(df.ALL)
+    df.loc[:,'ALL_RATE2'] = pd.to_numeric(df.ALL_RATE2)
+    
+    df.loc[:,'ALL_RATE'] = df.ALL_RATE2
+    df.drop(labels='ALL_RATE2',axis=1,inplace=True) 
+
+    assert((sum(df.ALL == '.'), sum(df.ALL_RATE == 'PS')) == (0, 0))
+    return df
