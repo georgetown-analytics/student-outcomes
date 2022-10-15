@@ -4,6 +4,5 @@ Cohort 28 Capstone Project for the Certificate of Data Science at Georgetown Uni
 ### Directory structure  
 ```
 data_docs   - Dataset descriptions 
-ingest      - Package for ingesting datasets
 notebooks   - Jupyter notebooks
 ```
