@@ -1,8 +1,8 @@
 # Shelve
-.dat
-.dir
-.bak
-
+*.dat
+*.dir
+*.bak
+*.~*
 # Editors
 .vscode/
 .idea/
