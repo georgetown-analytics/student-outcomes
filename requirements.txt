@@ -3,3 +3,5 @@ numpy
 seaborn
 matplotlib
 swampy
+boto3
+ipykernel
