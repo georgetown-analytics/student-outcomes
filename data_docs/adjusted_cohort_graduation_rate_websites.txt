@@ -1,0 +1,10 @@
+# Adjusted cohort graduation rate datasets for 2010-2011 through 2018-2019
+https://www2.ed.gov/about/inits/ed/edfacts/data-files/acgr-sch-sy2018-19-wide.csv  
+https://www2.ed.gov/about/inits/ed/edfacts/data-files/acgr-sch-sy2017-18.csv  
+https://www2.ed.gov/about/inits/ed/edfacts/data-files/acgr-sch-sy2016-17.csv  
+https://www2.ed.gov/about/inits/ed/edfacts/data-files/acgr-sch-sy2015-16.csv  
+https://www2.ed.gov/about/inits/ed/edfacts/data-files/acgr-release2-sch-sy2014-15.csv  
+https://www2.ed.gov/about/inits/ed/edfacts/data-files/acgr-sch-sy2013-14.csv  
+https://www2.ed.gov/about/inits/ed/edfacts/data-files/acgr-sch-sy2012-13.csv  
+https://www2.ed.gov/about/inits/ed/edfacts/data-files/acgr-sch-sy2011-12.csv  
+https://www2.ed.gov/about/inits/ed/edfacts/data-files/acgr-sch-sy2010-11.csv  
