@@ -5,4 +5,5 @@ Cohort 28 Capstone Project for the Certificate of Data Science at Georgetown Uni
 ```
 data_docs   - Dataset descriptions 
 notebooks   - Jupyter notebooks
+scripts     - Python scripts
 ```
