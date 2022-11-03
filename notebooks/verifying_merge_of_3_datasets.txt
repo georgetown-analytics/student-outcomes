@@ -1,0 +1,3 @@
+gr_dataset:         186141 instances with 0 missing values 
+gr+dir:             185626 instances, 52 columns, fipst stnam all_cohort all_rate have 0 missing values. enrollment has close to zero or zero.
+gr+dir+assessment:  90K per year = ~630
