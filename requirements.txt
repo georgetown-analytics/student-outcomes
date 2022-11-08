@@ -5,3 +5,5 @@ matplotlib
 swampy
 boto3
 ipykernel
+feature-engine
+sklearn
