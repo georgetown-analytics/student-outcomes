@@ -199,3 +199,15 @@ Yeo-Johnson on the target hurt the model instead of helping it
  With polynomial features degree = 2
  Test R^2  0.617
  Train R^2 0.626
+
+######################################################################################################################
+ Dataset A
+ RandomForestRegressor, default parameters, random_state=42
+ Accuracy on training set: 0.779
+ RMSE on test set: 9.11
+######################################################################################################################
+ Dataset A
+ RandomForestRegressor, max_features=2, random_state=42
+ Accuracy on training set: 0.783
+ RMSE on test set: 9.02
+######################################################################################################################
