@@ -12,3 +12,9 @@
 
 # eda.ipynb
  * Exploratory data analysis
+
+# model_dataA_glm_1.ipynb
+ * Modeling dataset A using a generalized linear model (elasticnet) using scaling of numerics and one-hot encoding of categoricals
+
+# model_dataA_glm_2.ipynb
+ * Modeling dataset A using same method as glm1 but with polynomial and interaction terms added
