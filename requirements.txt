@@ -10,3 +10,5 @@ scikit-learn
 missingno
 openpyxl
 yellowbrick
+bokeh
+ipykernel
