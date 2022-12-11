@@ -1,0 +1,36 @@
+Feature Name                               , Description
+ School_Type_1.0                           , school is a regular school
+ School_Type_4.0                           , other/alternative school
+ Enrollment Teacher_Ratio2                 , enrollment x teacher ratio 2
+ Highest_Grade_Offered Rla_Pct_Part        , highest grade offered x reading participation
+ Rla_Pct_Part                              , percent who took state reading test
+ Rla_Pct_Part^2                            , reading participation squared 
+ Reduced_Price_Lunch Teacher_Ratio2        , # kids with reduced price lunch x teacher ratio 2
+ Teacher_Ratio2                            , # teachers / number of students who could have graduated 
+ Math_Pct_Part Rla_Pct_Part                , math participation x reading participation
+ Teacher_Ratio1                            , # teachers / total enrollment in the school
+ Free_Lunch                                , number of students receiving a free lunch
+ Civilian_Labor_Force                      , labor force in the school's county
+ All_Cohort                                , number of students who could have graduated
+ Enrollment                                , total enrollment in school
+ Free_Or_Reduced_Price_Lunch               , kids receiving either free or reduced
+ Teachers_Fte                              , number of teachers
+ Reduced_Price_Lunch                       , kids receiving reduced price lunch
+ Math_Pct_Part                             , percent who took state math test
+ Unemployment_Rate                         , unemployment rate in school's county
+ Title_I_Status_5.0                        , school eligible for Title I and provides it 
+ Charter_0.0                               , school is NOT a charter school
+ Urban_Centric_Locale_11.0                 , school is in a large City 
+ Num_Grades                                , number of grades offered at school
+ Lowest_Grade_Offered                      , lowest grade offered at the school
+ Virtual_1.0                               , school is virtual
+ Metro_Or_Not_0.0                          , school is NOT in a metro area
+ Rural_Urban_Continuum_Code_1.0            , metro in county of 1 million or more people
+ Title_I_Eligible_1.0                      , eligible for state Title I program
+ Title_I_Status_6.0                        , school is not eligible for title I or targeted assistance
+ Urban_Influence_Code_1.0                  , large in metro area with 1 million or more
+ School_Level_4.0                          , school level designation "other"
+ Urban_Centric_Locale_12.0                 , city midsize
+ School_Level_3.0                          , school level designation "high"
+ Virtual_0.0                               , not a virtual school
+ School_Type_3.0                           , school is a vocational school
