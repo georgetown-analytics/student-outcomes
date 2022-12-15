@@ -12,3 +12,4 @@ openpyxl
 yellowbrick
 bokeh
 ipykernel
+joblib
