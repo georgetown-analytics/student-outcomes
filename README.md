@@ -1,14 +1,6 @@
 # Machine Learning Prediction of High School Graduation Rates  
 
-*Cohort 28 (Fall 2022)  Capstone Project for the Certificate of Data Science at Georgetown University School of Continuing Studies*  
-
----
-
-## Team Sunshine  
-
-Name 1  
-Name 2  
-Name 3  
+*Cohort 28 (Fall 2022)  Capstone Project for the Certificate of Data Science at Georgetown University School of Continuing Studies*    
 
 ---
 
