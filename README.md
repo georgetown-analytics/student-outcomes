@@ -26,14 +26,18 @@ Imagine being able to predict the factors leading to dropout and graduation rate
 
 **7_Validation** --> validation of models  
 
+**8_Paper_and_Slides** --> final project report and presentation
+
 **data** --> processed dataframes stored as csvs for use by other notebooks, also metadata csv  
 
 **data_docs** --> description of features and provenance of the datasets  
 
-**LICENSE** --> software license for this project  
-
 **logs** --> logs from modeling  
 
 **model_files** --> saved model files for deployment  
+
+**.gitignore** --> a list of file types to remain untracked by Git
+
+**LICENSE** --> software license for this project  
 
 **requirements.txt** --> run `pip install -r requirements.txt` to load dependencies for the project
